@@ -56,4 +56,4 @@ The final model was used to make predictions on the test dataset. First, the dat
 ## Evaluation
 To generate some real-world conclusions from the model, we explored the feature importances. They can be seen in **Figure 3** below:<br>
 ![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/422f1924-b350-415e-8282-6d7318697b20)<br>
-**Figure 3**: Based on the model, the size of a bulldozer and the year it was made are two of the best indicators for predicting it's price.
+**Figure 3**: Based on the model, the size of a bulldozer and the year it was made are two of the best indicators for predicting its price.
