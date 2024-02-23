@@ -44,7 +44,7 @@ Many of the features in the data were partially or completely non-numerical, so 
 
 Next, I addressed missing/null values.
 * For numerical features, I chose to fill missing values with the median to avoid any effects outliers may have on the mean. Binary columns were also added to track which rows were missing.
-* Categorical variables were turned into numbers and incremented by 1 to remove missing values. Binary columns were again added to track which rows were missing values.
+* Categorical variables were turned into numbers using category codes and incremented by 1 to remove missing values. Binary columns were again added to track which rows were missing values.
 
 Finally, data was split into training (records prior to 2012) and validation (records in 2012) sets.
 
