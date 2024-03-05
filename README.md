@@ -24,17 +24,17 @@ The metric for this competition is the RMSLE (root mean squared log error) betwe
 
 I started with some brief EDA to get familiar with the data.
 
-First, I plotted a histogram of the sale prices, seen in **Figure 1** below:
+First, I plotted a histogram of the sale prices, seen in Figure 1.
 
-![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/443c9eb2-6ab3-4709-8359-737b919d64a5)
+> ![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/443c9eb2-6ab3-4709-8359-737b919d64a5)
+>
+> **Figure 1.** Histogram of bulldozer sale prices. The majority of bulldozer sales fall on the lower end of the price range.
 
-**Figure 1**: The majority of bulldozer sales fall on the lower end of the price range.
+Because I'm dealing with time-series data, I next looked at sale price against date, seen in Figure 2.
 
-Because I'm dealing with time-series data, I next looked at sale price against date, seen in **Figure 2** below:
-
-![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/d1e911a1-cdb4-4f9c-bd1e-32c71235912d)
-
-**Figure 2**: There seems to be a pretty good spread of data across time, except for gaps around 2005 and 2008.
+> ![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/d1e911a1-cdb4-4f9c-bd1e-32c71235912d)
+>
+> **Figure 2**: Bulldozer sale price over time. There seems to be a pretty good spread of data across time, except for gaps around 2005 and 2008.
 
 ## Data Cleaning & Preparation
 
@@ -60,8 +60,8 @@ Hyperparameter tuning was performed using `RandomizedSearchCV` with 5-fold cross
 The final model was used to make predictions on the test dataset. First, the data had to be processed to be in the same format as the training and validation sets. Test data predictions were exported to a .csv file.
 
 ## Evaluation
-To generate some real-world conclusions from the model, I explored the feature importances. They can be seen in **Figure 3** below:
+To generate some real-world conclusions from the model, I explored the feature importances. They can be seen in Figure 3.
 
-![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/422f1924-b350-415e-8282-6d7318697b20)
-
-**Figure 3**: Based on the model, the size of a bulldozer and the year it was made are two of the best indicators for predicting its price.
+> ![image](https://github.com/nwferreri/bulldozer-price-prediction/assets/112211174/422f1924-b350-415e-8282-6d7318697b20)
+>
+> **Figure 3**: Feature importances. Based on the model, the size of a bulldozer and the year it was made are two of the best indicators for predicting its price.
